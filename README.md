@@ -8,7 +8,7 @@ Le but est de créer le backend de l'application, le frontend étant déjà cod�
 * Implémenter un modèle logique de données conformément à la réglementation
 * Stocker des données de manière sécurisée
 * Mettre en œuvre des opérations CRUD de manière sécurisée
-API REST
+### API REST
 * Sécurité OWASP et RGPD
 
 ### Installation :
