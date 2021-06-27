@@ -1,6 +1,7 @@
 const http = require('http');
 const app = require('./app');
 
+// Configure le port de connection en fonction de l'environnement
 const normalizePort = val => {
     const port = parseInt(val, 10);
 
@@ -12,9 +13,11 @@ const normalizePort = val => {
     }
     return false;
 };
+// Si aucun port n'est fourni on écoutera sur le port 3000
 const port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
 
+// Recherche et gère les erreurs
 const errorHandler = error => {
     if (error.syscall !== 'listen') {
         throw error;

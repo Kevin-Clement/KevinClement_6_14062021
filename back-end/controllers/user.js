@@ -1,6 +1,6 @@
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcrypt'); // bcrypt pour hasher le mot de passe des utilisateurs
 const User = require('../models/User');
-const jwt = require('jsonwebtoken');
+const jwt = require('jsonwebtoken'); // jsonwebtoken pour attribuer un token à un utilisateur au moment ou il se connecte
 
 exports.signup = (req, res, next) => {
     bcrypt.hash(req.body.password, 10)

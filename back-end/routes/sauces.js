@@ -8,6 +8,7 @@ const multer = require('../middleware/multer-config');
 
 const saucesCtrl = require('../controllers/sauces');
 
+// Création des différentes ROUTES de l'API en leurs précisant dans l'ordre, leurs middlewares et controllers
 router.post('/', auth, multer, saucesCtrl.createSauce);
 router.put('/:id', auth, multer, saucesCtrl.modifySauce);
 router.delete('/:id', auth, saucesCtrl.deleteSauce);

@@ -1,6 +1,7 @@
 
 const Sauce = require('../models/Sauce');
 
+// 'file system' de Node permet de gérer ici les téléchargements et modifications d'images
 const fs = require('fs');
 
 
