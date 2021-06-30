@@ -1,9 +1,8 @@
-
+// Récupération du modèle créé grâce à la fonction schéma de mongoose
 const Sauce = require('../models/Sauce');
 
 // 'file system' de Node permet de gérer ici les téléchargements et modifications d'images
 const fs = require('fs');
-
 
 exports.createSauce = (req, res, next) => {
     const sauceObject = JSON.parse(req.body.sauce);

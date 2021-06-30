@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-
+// Mongoose nous permet de gérer notre base de données MongoDB en implémentant des schémas de données stricts
 
 const sauceSchema = mongoose.Schema({
     userId: {
