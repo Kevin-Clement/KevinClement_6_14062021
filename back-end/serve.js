@@ -1,5 +1,5 @@
-const http = require('http');
-const app = require('./app');
+const http = require('http'); // Import du package HTTP
+const app = require('./app'); // Import de app
 
 // Configure le port de connection en fonction de l'environnement
 const normalizePort = val => {
@@ -38,6 +38,7 @@ const errorHandler = error => {
     }
 };
 
+// Créer un serveur avec express qui utilise app
 const server = http.createServer(app);
 
 server.on('error', errorHandler);

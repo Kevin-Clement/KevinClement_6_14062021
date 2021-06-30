@@ -5,7 +5,7 @@ const bodyParser = require('body-parser'); // Permet d'extraire l'objet JSON des
 // Utilisation du module 'helmet' pour la sécurité en protégeant l'application de certaines vulnérabilités
 const helmet = require("helmet"); // il sécurise nos requêtes HTTP et ajoute une protection XSS mineure
 const path = require('path'); // Plugin qui sert dans l'upload des images et permet de travailler avec les répertoires et chemin de fichier
-const rateLimit = require("express-rate-limit");
+const rateLimit = require("express-rate-limit"); // Limite le nombre de requete et donc le forcing
 
 const saucesRoutes = require('./routes/sauces'); // On importe la route dédiée aux sauces
 const userRoutes = require('./routes/user'); // On importe la route dédiée aux utilisateurs
